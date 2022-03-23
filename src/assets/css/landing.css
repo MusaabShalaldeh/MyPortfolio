@@ -1,0 +1,34 @@
+#web-projects-container{
+    display: table !important;
+}
+
+#web-project-card{
+    justify-content: space-between m !important;
+    min-height: 400px !important;
+}
+
+#web-project-button{
+    position: absolute !important;
+    left:    22px !important;
+    bottom:   30px !important;
+}
+.cardImage{
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+}
+
+#game-and-maps-container{
+    display: table !important;
+}
+#game-and-maps h4, #game-and-maps p{
+    min-height: 50px !important;
+}
+
+#game-or-map{
+    display: table-cell !important;
+    padding: 1rem !important;
+    margin: auto !important;
+    text-align: ;
+}
+

@@ -84,6 +84,7 @@ class Profile extends React.Component {
                       className="order-lg-3 text-lg-right align-self-lg-center"
                       lg="4"
                     >
+                      {/*
                       <div className="card-profile-actions py-4 mt-lg-0">
                         <Button
                           className="mr-4"
@@ -104,6 +105,7 @@ class Profile extends React.Component {
                           Message
                         </Button>
                       </div>
+                      */}
                     </Col>
                     <Col className="order-lg-1" lg="4">
                       <div className="card-profile-stats d-flex justify-content-center">
@@ -134,26 +136,20 @@ class Profile extends React.Component {
                     </div>
                     <div className="h6 mt-4">
                       <i className="ni business_briefcase-24 mr-2" />
-                      Solo Game Developer
+                      Software Developer,
                     </div>
                     <div>
                       <i className="ni education_hat mr-2" />
-                      Student At ASAC
+                      Game Developer
                     </div>
                   </div>
                   <div className="mt-5 py-5 border-top text-center">
                     <Row className="justify-content-center">
                       <Col lg="9">
                         <p>
-                          An artist of considerable range, Ryan — the name taken
-                          by Melbourne-raised, Brooklyn-based Nick Murphy —
-                          writes, performs and records all of his own music,
-                          giving it a warm, intimate feel with a solid groove
-                          structure. An artist of considerable range.
+                          A motivated individual with decent knowledge of different programming languages and development tools such as:
+                          Unity, Source Engine, C#, Squirrel, Python, HTML, CSS & Javascript.
                         </p>
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
-                          Show more
-                        </a>
                       </Col>
                     </Row>
                   </div>

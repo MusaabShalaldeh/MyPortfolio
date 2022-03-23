@@ -28,6 +28,7 @@ import team1 from "assets/img/theme/team-1-800x800.jpg";
 import team2 from "assets/img/theme/team-2-800x800.jpg";
 import team3 from "assets/img/theme/team-3-800x800.jpg";
 import team4 from "assets/img/theme/team-4-800x800.jpg";
+import "../../assets/css/landing.css";
 
 // reactstrap components
 import {
@@ -143,66 +144,25 @@ class Landing extends React.Component {
           </div>
           <section className="section section-lg pt-lg-0 mt--200">
             <Container>
-              <h1>201 Projects</h1>
+              <h1>Web Projects</h1>
               <br />
-              <Row className="justify-content-center">
+              <Row className="justify-content-evenly" id="web-projects-container">
                 <Col lg="12">
                   <Row className="row-grid">
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-primary text-uppercase">
-                            Salmon Cookies Stand
-                          </h6>
-                          <p className="description mt-3">
-                            A humble online Cookies Shop that sells cookies that
-                            are shaped like Salmon Fishes!
-                          </p>
-                          <Button
-                            className="mt-4"
-                            color="primary"
-                            href="https://musaabshalaldeh.github.io/cookie-stand/"
-                            target="_blank"
-                          >
-                            Visit
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-success text-uppercase">
-                            Bus Mall Application
-                          </h6>
-                          <p className="description mt-3">
-                            A Web App where users can vote for their favorite
-                            products!
-                          </p>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="https://musaabshalaldeh.github.io/bus-mall/"
-                            target="_blank"
-                          >
-                            Visit
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
+                      <Card className="card-lift--hover shadow border-0" id="web-project-card">
                         <CardBody className="py-5">
                           <h6 className="text-warning text-uppercase">
                             MOROS Covid-19 Vaccine Tracker
                           </h6>
                           <p className="description mt-3">
-                            My Group project of 201 level, a web site where you
+                            A web site where you
                             can do many things such as sumbitting your
                             information, taking quiz to test your knowledge
                             about covid-19 in general and much more!
                           </p>
                           <Button
+                            id="web-project-button"
                             className="mt-4"
                             color="warning"
                             href="https://moros-v1.github.io/MTFV/"
@@ -213,101 +173,22 @@ class Landing extends React.Component {
                         </CardBody>
                       </Card>
                     </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </Container>
-            <Container>
-              <h1>301 Projects</h1>
-              <br />
-              <Row className="justify-content-center">
-                <Col lg="12">
-                  <Row className="row-grid">
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-primary text-uppercase">
-                            Horned Beasts
-                          </h6>
-                          <p className="description mt-3">
-                            A web page that shows some horned beasts!
-                          </p>
-                          <Button
-                            className="mt-4"
-                            color="primary"
-                            href="https://ms-horned-beasts.netlify.app/"
-                            target="_blank"
-                          >
-                            Visit
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-success text-uppercase">
-                            PlaceHolder Title
-                          </h6>
-                          <p className="description mt-3">
-                            PlaceHolder Description
-                          </p>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="#pablo"
-                            target="_blank"
-                          >
-                            Visit
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
+                      <Card className="card-lift--hover shadow border-0" id="web-project-card">
                         <CardBody className="py-5">
                           <h6 className="text-warning text-uppercase">
-                            PlaceHolder Title
+                            World of Art
                           </h6>
-                          <p className="description mt-3">
-                            PlaceHolder Description
+                          <p className="description mt-3">h
+                            A web app where you can view a massive library of pieces of art, save your favorite pieces in your own collections
+                            and even put up your own art pieces for sale!
                           </p>
                           <Button
+                            id="web-project-button"
                             className="mt-4"
                             color="warning"
-                            href="#pablo"
-                            target="_blank"
-                          >
-                            Visit
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </Container>
-            <Container>
-              <br />
-              <h1>401 Projects</h1>
-              <br />
-              <Row className="justify-content-center">
-                <Col lg="12">
-                  <Row className="row-grid">
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-primary text-uppercase">
-                            PlaceHolderTitle
-                          </h6>
-                          <p className="description mt-3">
-                            PlaceHolder Description
-                          </p>
-                          <Button
-                            className="mt-4"
-                            color="primary"
-                            href="#pablo"
-                            target="_blank"
+                            href="https://world-of-art.netlify.app/"
+                            // onClick={e => e.preventDefault()}
                           >
                             Visit
                           </Button>
@@ -315,39 +196,20 @@ class Landing extends React.Component {
                       </Card>
                     </Col>
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <h6 className="text-success text-uppercase">
-                            PlaceHolder Title
-                          </h6>
-                          <p className="description mt-3">
-                            PlaceHolder Description
-                          </p>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="#pablo"
-                            target="_blank"
-                          >
-                            Visit
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
+                      <Card className="card-lift--hover shadow border-0" id="web-project-card">
                         <CardBody className="py-5">
                           <h6 className="text-warning text-uppercase">
-                            PlaceHolder Title
+                          AI Medica
                           </h6>
                           <p className="description mt-3">
-                            PlaceHolder Description
+                          A web application that serves users who want to check their medical tests for a specific disease during their discovering process, It can help patients or doctors as an assistant for checking Pathological cases whether they are Positve or Negative in set of disease list.
                           </p>
                           <Button
+                            id="web-project-button"
                             className="mt-4"
                             color="warning"
-                            href="#pablo"
-                            target="_blank"
+                            href="https://ai-medica.vercel.app/"
+                            // onClick={e => e.preventDefault()}
                           >
                             Visit
                           </Button>
@@ -361,11 +223,11 @@ class Landing extends React.Component {
           </section>
           <section className="section bg-secondary">
             <Container>
-            <h1>My Personal Projects</h1>
-              <Row className="row-grid align-items-center">
-                <Col md="6">
-                  <Card className="bg-default shadow border-0">
-                    <CardImg alt="..." src={cardImg} top />
+            <h1>Game & Map Projects</h1>
+              <Row className="game-and-maps-container">
+                <Col md="6" id="game-or-map">
+                  <Card className="bg-default shadow border-0" >
+                    <CardImg className ="cardImage" alt="..." src={cardImg} top />
                     <blockquote className="card-blockquote">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -393,9 +255,9 @@ class Landing extends React.Component {
                     </blockquote>
                   </Card>
                 </Col>
-                <Col md="6">
-                  <Card className="bg-default shadow border-0">
-                    <CardImg alt="..." src={cardImg2} top />
+                <Col md="6" id="game-or-map">
+                  <Card className="bg-default shadow border-0" >
+                    <CardImg className ="cardImage" alt="..." src={cardImg2} top />
                     <blockquote className="card-blockquote">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -416,16 +278,16 @@ class Landing extends React.Component {
                       <h4 className="display-3 font-weight-bold text-white">
                         Castle of the Bladekeeper
                       </h4>
-                      <p className="lead text-italic text-white">
+                      <p className="lead text-italic text-white py-0">
                         A level set in a fantasy world with an epic in-depth
                         story.
                       </p>
                     </blockquote>
                   </Card>
                 </Col>
-                <Col md="6">
-                  <Card className="bg-default shadow border-0">
-                    <CardImg alt="..." src={cardImg3} top />
+                <Col md="6" id="game-or-map">
+                  <Card className="bg-default shadow border-0" >
+                    <CardImg className ="cardImage" alt="..." src={cardImg3} top />
                     <blockquote className="card-blockquote">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -452,9 +314,9 @@ class Landing extends React.Component {
                     </blockquote>
                   </Card>
                 </Col>
-                <Col md="6">
-                  <Card className="bg-default shadow border-0">
-                    <CardImg alt="..." src={cardImg4} top />
+                <Col md="6" id="game-or-map">
+                  <Card className="bg-default shadow border-0" >
+                    <CardImg className ="cardImage" alt="..." src={cardImg4} top />
                     <blockquote className="card-blockquote">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
